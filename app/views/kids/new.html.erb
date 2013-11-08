@@ -1,0 +1,9 @@
+<h1>Welcome to Halloween, the greatest holiday</h1>
+<h3>Enter your credentials, kid!</h3>
+<%= form_for @kid, :url => {:action => 'create'}  do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+  <%= f.submit %>
+<% end %>
